@@ -3,3 +3,7 @@
 2019-03-29 14:22:37,692 [1] FATAL - Reader1:建立连接失败。向一个无法连接的网络尝试了一个套接字操作。 192.168.1.230:7086
 2019-03-29 14:23:03,082 [1] FATAL - Reader1:建立连接失败。向一个无法连接的网络尝试了一个套接字操作。 192.168.1.230:7086
 2019-03-29 14:23:07,175 [1] FATAL - Reader1:建立连接失败。向一个无法连接的网络尝试了一个套接字操作。 192.168.1.230:7086
+2020-06-12 11:21:03,395 [1] ERROR - Reader1:Connecte failure.Reader1:The PortName cannot be empty.
+Parameter name: PortName
+2020-06-12 11:21:06,320 [1] ERROR - Reader1:Connecte failure.Reader1:The PortName cannot be empty.
+Parameter name: PortName

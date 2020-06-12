@@ -48,3 +48,17 @@ C:\Users\lennox\Desktop\Final Year Project\libraryRobot\obj\x86\Release\SingleRe
 C:\Users\lennox\Desktop\Final Year Project\libraryRobot\obj\x86\Release\SingleReaderTest.csproj.CopyComplete
 C:\Users\lennox\Desktop\Final Year Project\libraryRobot\obj\x86\Release\SingleReaderTest.exe
 C:\Users\lennox\Desktop\Final Year Project\libraryRobot\obj\x86\Release\SingleReaderTest.pdb
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.csprojAssemblyReference.cache
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.detailDB.resources
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.compareReport.resources
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.FormGPIO.resources
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.FormHelp.resources
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.FormMain.resources
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.FormReaderConfig.resources
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.FormScanConfig.resources
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.Properties.Resources.resources
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.storageForm.resources
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.csproj.GenerateResource.cache
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.csproj.CoreCompileInputs.cache
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.exe
+C:\Users\UIC\Desktop\libraryRobot-master\obj\x86\Release\SingleReaderTest.pdb

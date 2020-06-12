@@ -34,7 +34,7 @@ namespace SingleReaderTest
         bool isTryReconnNet = false;
         int tryReconnNetTimeSpan;
         //Database connection
-        MySqlConnection mycon = new MySqlConnection("Server=127.0.0.1;User Id=root;password=;Database=library");
+        MySqlConnection mycon = new MySqlConnection("Server=172.16.191.135;User Id=root;password=admin;Database=library");
         //timer control
         System.Timers.Timer timer = null;
         long timeCount = 0;
@@ -54,6 +54,14 @@ namespace SingleReaderTest
 
             //traversing all possible serial ports, use the first one
             string[] serialPort = SerialPort.GetPortNames();
+
+            //add the available ports to selectButton
+            foreach (var port in serialPort)
+            {
+                comboBox1.Items.Add(port);
+                
+            }
+            
             reader = new IRP1.Reader("Reader1", "RS232", serialPort[0] + ",115200");
 
             this.FormClosed += new FormClosedEventHandler(FormMain_FormClosed);
@@ -179,8 +187,20 @@ namespace SingleReaderTest
             }
             else
             {
-                lblMsg.Text = "Connection Failed!";
-                MessageBox.Show("Failed to create the connection.");
+                reader = new IRP1.Reader("Reader1", "RS232", this.comboBox1.Text + ",115200");
+                if (reader.Connect())
+                {
+                    changeCtrlEnable("conn");
+                    //注册接收读写器消息事件
+                    reader.OnMessageNotificationReceived += new Invengo.NetAPI.Core.MessageNotificationReceivedHandle(reader_OnMessageNotificationReceived);
+                    lblMsg.Text = "Connection Successful!";
+
+                }
+                else
+                {
+                    lblMsg.Text = "Connection Failed!";
+                    MessageBox.Show("Failed to create the connection.");
+                }
             }
         }
 
@@ -1019,6 +1039,11 @@ namespace SingleReaderTest
         {
             compareBarCode();
             compareLayerCode();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -53,6 +53,7 @@
             this.MI_ScanConfig = new System.Windows.Forms.ToolStripMenuItem();
             this.BTN_compare = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -300,7 +301,7 @@
             this.MI_Config});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1199, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(1199, 24);
             this.menuStrip1.TabIndex = 43;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -309,14 +310,14 @@
             this.MI_Config.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MI_ScanConfig});
             this.MI_Config.Name = "MI_Config";
-            this.MI_Config.Size = new System.Drawing.Size(58, 21);
+            this.MI_Config.Size = new System.Drawing.Size(55, 20);
             this.MI_Config.Text = "Config";
             // 
             // MI_ScanConfig
             // 
             this.MI_ScanConfig.Enabled = false;
             this.MI_ScanConfig.Name = "MI_ScanConfig";
-            this.MI_ScanConfig.Size = new System.Drawing.Size(180, 22);
+            this.MI_ScanConfig.Size = new System.Drawing.Size(136, 22);
             this.MI_ScanConfig.Text = "Scan config";
             this.MI_ScanConfig.Click += new System.EventHandler(this.MI_ScanConfig_Click_1);
             // 
@@ -342,11 +343,21 @@
             this.label4.TabIndex = 45;
             this.label4.Text = "Compare and Report";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 142);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(87, 23);
+            this.comboBox1.TabIndex = 46;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1199, 654);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BTN_compare);
             this.Controls.Add(this.menuStrip1);
@@ -413,6 +424,7 @@
         private System.Windows.Forms.ToolStripMenuItem MI_ScanConfig;
         private System.Windows.Forms.Button BTN_compare;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

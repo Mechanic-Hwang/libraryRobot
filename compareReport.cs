@@ -16,7 +16,7 @@ namespace SingleReaderTest
 {
     public partial class compareReport : Form
     {
-        MySqlConnection myconn = new MySqlConnection("Server=127.0.0.1;User Id=root;password=;Database=library");
+        MySqlConnection myconn = new MySqlConnection("Server=172.16.191.135;User Id=root;password=admin;Database=library");
         public compareReport()
         {
             myconn.Open();
